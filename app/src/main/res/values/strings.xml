@@ -2,4 +2,6 @@
     <string name="app_name">DAY6</string>
     <string name="Member">TODO</string>
     <string name="intro">This is the first line \n this is a new line.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
