@@ -29,6 +29,7 @@ class Home : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
 
+        //fragment
         val homeFragment = homefragment()
         val musicFragment = musicfragment()
         val profileFragment = profilefragment()
@@ -46,6 +47,7 @@ class Home : AppCompatActivity() {
             true
         }
 
+        //isi recyclerview
         val memberlist = listOf<DAY6>(
             DAY6(
                 R.drawable.outoftheblue,
@@ -184,6 +186,7 @@ class Home : AppCompatActivity() {
 
     }
 
+    //fragment
     private fun makeCurrentFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fram_nav, fragment)

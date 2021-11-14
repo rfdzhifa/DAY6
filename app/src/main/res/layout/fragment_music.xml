@@ -3,11 +3,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.musicfragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.musicfragment"
+    android:background="#181818">
 
-    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="85dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/thedemon"/>
+
+    </androidx.cardview.widget.CardView>
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zombie"
+        android:layout_marginTop="415dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FCFCFC"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="445dp"
+        android:fontFamily="@font/poppins"
+        android:text="The Demon"
+        android:textColor="#B6B6B6"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="565dp"
+        android:background="@drawable/ic_favourite"/>
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="565dp"
+        android:background="@drawable/ic_list"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="615dp"
+        android:layout_width="350dp"
+        android:layout_height="8dp"
+        android:background="#000000"
+        android:progress="75"
+        android:progressDrawable="@drawable/progressbar"/>
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_pause"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="645dp"/>
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_previous"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="645dp"/>
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:background="@drawable/ic_next"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="645dp"/>
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_shuffle"
+        android:layout_marginTop="645dp"
+        android:layout_marginLeft="45dp"
+        android:layout_gravity="left"/>
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_repeat"
+        android:layout_marginTop="645dp"
+        android:layout_marginRight="45dp"
+        android:layout_gravity="right"/>
 
 </FrameLayout>
